@@ -213,11 +213,12 @@ body{
   align-items: left;
   text-align: left;
   padding: 20px 15px;
-  border-top: none;
+  border-top: 4px double #fff;
   border-left: none;
   border-right: none;
-  border-bottom: 2px dotted #fff;
+  border-bottom: 4px double #fff;
   outline: none;
+  border-radius: 20px;
   font-size: 18px;
   color: #fff;
   font-weight: 700;
