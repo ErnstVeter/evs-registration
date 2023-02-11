@@ -51,8 +51,8 @@
 .img-slider .slide .info h2{
   color: #fff;
   font-size: 2vw;
-  font-weight: 700;
-  letter-spacing: 0.6px;
+  font-weight: 750;
+  letter-spacing: 1px;
 }
 
 .img-slider .slide .info p{
@@ -169,4 +169,79 @@
   .img-slider .navigation{
     bottom: 10px;
   }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #000;
+  text-align: left;
+}
+
+.title{
+  font-size: 50px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-decoration: underline 4px;
+}
+
+
+.questions-container{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  align-items: left;
+}
+
+.question{
+  text-align: left;
+  align-items: left;
+  justify-content: left;
+}
+.question button{
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  padding: 20px 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px dotted #fff;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.question p{
+  font-size: 22px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+/*add this class when click*/
+.question p.show{
+  max-height: 500px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
 }
